@@ -35,3 +35,26 @@
 - Al menos 10 section blocks documentados
 - Usado en 3+ proyectos del ecosistema
 - Tiempo de setup de UI reducido 70%
+
+---
+
+## 📌 Control de calidad
+
+### Checklist
+- [x] Propuesta enfocada en funcionalidad, no stack
+- [x] Flujos claros (consumo y contribución)
+- [x] Alcance definido
+- [x] Supuestos marcados
+
+### Supuestos
+- Los componentes se consumen por copia directa (no npm publish en MVP)
+- Todos los componentes usan Tailwind para styling
+- No se requiere Storybook en primera fase
+- La librería crece orgánicamente: si un componente se repite en 2+ proyectos, se extrae aquí
+
+### Riesgos
+- Componentes se desactualizan si no hay mantenimiento activo
+- Sin tests, los cambios pueden romper proyectos que los consumen
+- Sin versionado, no hay control de breaking changes
+
+> ⛔ **GATEKEEPER:** El usuario debe aprobar esta propuesta antes de avanzar a `2.0_Documentacion.md`.
